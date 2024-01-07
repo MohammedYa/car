@@ -1,6 +1,6 @@
 .section{
     height: 100vh;
-    background-image: url('../../../assets/bgSection.png');
+    background-image: url('../../../assets/images/section1.jpg');
     background-size: cover;
     background-position: center center;
     inset: 0;
@@ -10,7 +10,7 @@
     position: absolute;
     inset: 0;
     background-color: rgba(5, 24, 33, 0.56);
-    
+
 }
 .container,.text,.col-xl-6 ,.row,.formcontainer{
     height: 100%;
@@ -28,7 +28,7 @@
     line-height: 96px;
     letter-spacing: 0em;
     text-align: right;
-    
+
 }
 .text p{
 font-family: Poppins;
@@ -81,11 +81,11 @@ color: rgba(255, 255, 255, 0.73);
 
 }
 .formcontainer a{
-   
+
     margin: 30px;
     text-decoration: none;
     color: #fff !important;
- 
+
  }
  .input-container{
 position: relative;
