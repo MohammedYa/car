@@ -1,5 +1,7 @@
 .navbar{
     background-color: #fff !important;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 .nav-link,.navbar-brand{
     color: rgb(101, 20, 93);
