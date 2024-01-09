@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import jwtDecode from 'jwt-decode';
+import { BehaviorSubject}from'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -11,5 +13,9 @@ constructor(private _HttpClient:HttpClient) { }
 login(form:any):Observable<any>{
 return this._HttpClient.post("http://mohammedramadan-001-site1.htempurl.com/api/Login",form)
 }
+// saveUserData(){
+//   let encodedToken=localStorage.getItem("userToken")
+//   let decodedToken:any=jwtDecode(<string>encodedToken)
+//   this.UserData.next(decodedToken)}
 
 }
