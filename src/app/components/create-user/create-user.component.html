@@ -21,30 +21,31 @@
               <div class="form">
 
                 <h2>انشاء حساب </h2>
-                <Form>
+                <Form [formGroup]="addUserForm" (ngSubmit)="sendUserData(addUserForm)">
+
                   <div class="input-container">
                     <i class="fa-solid fa-user icon"></i>
-                    <input type="text" placeholder="الحساب الخاص بك">
+                    <input formControlName="firstName" type="text" placeholder=" الاسم الاول ">
                   </div>
                   <div class="input-container">
                     <i class="fa-solid fa-user icon"></i>
-                    <input type="text" placeholder=" الاسم الاول ">
+                    <input formControlName="lastName" type="text" placeholder=" الاسم الثاني ">
                   </div>
                   <div class="input-container">
                     <i class="fa-solid fa-user icon"></i>
-                    <input type="text" placeholder=" الاسم الثاني ">
+                    <input formControlName="userName" type="text" placeholder="الحساب الخاص بك">
                   </div>
                   <div class="input-container">
                     <i class="fa-solid fa-phone  icon"></i>
-                    <input type="text" placeholder=" الهاتف ">
+                    <input formControlName="phoneNumber" type="text" placeholder=" الهاتف ">
                   </div>
                   <div class="input-container">
                     <i class="fa-solid fa-unlock icon"></i>
-                    <input type="text" placeholder="كلمة المرور ">
+                    <input formControlName="password" type="text" placeholder="كلمة المرور ">
                   </div>
                   <div class="input-container">
                     <i class="fa-solid fa-unlock icon"></i>
-                    <input type="text" placeholder="اعادة كلمة المرور ">
+                    <input formControlName="confirmPassword" type="text" placeholder="اعادة كلمة المرور ">
                   </div>
                   <div class="roleCollection">
                     <label (click)="changeStatusOk()" [ngClass]="{available:okstatus}" for="Admin" class="role  ">
