@@ -3,10 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
 import { ForgetPassComponent } from './components/forget-pass/forget-pass.component';
+import { AddVehicleComponent } from './components/add-vehicle/add-vehicle.component';
+
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { VehicleDetailsComponent } from './components/vehicle-details/vehicle-details.component';
+
 
 const routes: Routes = [
   {path:"",redirectTo:"/Home",pathMatch:"full"},
@@ -14,11 +17,13 @@ const routes: Routes = [
   {path:'Login',component:LoginComponent},
   {path:'createUser',component:CreateUserComponent},
   {path:'ForgetPass',component:ForgetPassComponent},
+  {path:'addVehicle',component:AddVehicleComponent},
   {path:'search',component:SearchComponent},
   {path:"VehicleDetails",component:VehicleDetailsComponent},
   {path:'**',component:NotfoundComponent},
 
   ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes,{useHash:true})],
