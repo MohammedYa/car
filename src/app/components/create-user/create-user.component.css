@@ -1,3 +1,4 @@
+
 .section {
   height: 100vh;
   background-image: url("../../../assets/images/section1.jpg");
@@ -65,6 +66,74 @@
   outline: none;
   border: none;
   border-bottom: 1px solid #fff;
+
+.section{
+    height: 140vh;
+    background-image: url('../../../assets/images/section1.jpg');
+    background-size: cover;
+    background-position: center center;
+    inset: 0;
+    position: relative;
+}
+.layer{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(5, 24, 33, 0.56);
+
+}
+.container,.text,.col-xl-6 ,.row,.formcontainer{
+    height: 100%;
+}
+.text{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text h2{
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 96px;
+    letter-spacing: 0em;
+    text-align: right;
+
+}
+.text p{
+font-family: Poppins;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: right;
+
+}
+.formcontainer{
+    background-color: rgba(101, 20, 93, 0.55);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.formcontainer h2{
+ font-family: Poppins;
+font-size: 40px;
+font-weight: 600;
+line-height: 60px;
+letter-spacing: 0em;
+text-align: left;
+text-align: center;
+}
+.formcontainer .form{
+    width: 100%;
+}
+.formcontainer input{
+   width: 90%;
+   height: 60px;
+   outline: none;
+   border: none;
+   border-bottom: 1px solid #fff;
   margin: 20px;
   padding: 35px;
   background-color: transparent;
