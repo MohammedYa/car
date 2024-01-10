@@ -60,12 +60,17 @@ margin-bottom: 15px;
     justify-content: space-evenly;
     align-items: center;
 }
-.btns input{
+.btns input,.btns a{
+text-decoration: none;
 width: 213px;
 height: 56px;
 border-radius: 19px;
 background-color: #65145D;
-color:#fff;
+color: #fff !important;;
 box-shadow: 2px 2px 25px 0px #FFFFFF1A inset;
-
+text-align: center;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }

@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -9,6 +9,14 @@ export class CreateUserService {
 
   constructor(private _httpClient:HttpClient) { }
   addUser(form:any):Observable<any>{
-    return this._httpClient.post('http://mohammedramadan-001-site1.htempurl.com/api/Auth/AddUser',form)
+      // Replace 'YOUR_TOKEN_HERE' with the actual token you want to send
+      const token = localStorage.getItem("userToken");
+
+      // Create headers with Authorization token
+      const headers = new HttpHeaders({
+        'Authorization': `Bearer ${token}`
+      });
+  
+    return this._httpClient.post('http://mohammedramadan-001-site1.htempurl.com/api/Auth/AddUser',form,{headers})
   }
 }
