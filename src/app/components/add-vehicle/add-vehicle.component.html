@@ -129,12 +129,11 @@
 
               <div class="addImg">
                 <label for="addPhoto">
-                  <img src="../../../assets/images/add-image 1.png" alt="">
+                  <img  [src]="url" alt="">
                   <p>حمل الصورة</p>
                 </label>
               </div>
-
-              <input class="d-none" id="addPhoto" type="file">
+              <input class="d-none" id="addPhoto" type="file" (change)="onSelectFile($event)" >
             </div>
 
             <div class="btn-box mt-3">
