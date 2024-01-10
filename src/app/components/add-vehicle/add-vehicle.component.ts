@@ -26,7 +26,17 @@ export class AddVehicleComponent {
 
   addVehcilsForm(form:FormGroup){
     console.log(form.value);
-    
 
+  }
+
+  url:string= '../../../assets/images/add-image 1.png' ;
+  onSelectFile(e:any){
+  if (e.target.files){
+     var reader= new FileReader();
+     reader.readAsDataURL(e.target.files[0]);
+     reader.onload=(event:any)=> {
+      this.url=event.target.result ;
+     }
+    }
   }
 }

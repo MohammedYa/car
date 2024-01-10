@@ -1,6 +1,6 @@
 .main {
   height: 922px;
-  background-image: url("../../../assets/images/section1.jpg");
+  background-image: url("../../../assets/images/section1.png");
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -108,4 +108,7 @@
   width: 40px;
   height: 40px;
   flex-shrink: 0;
+}
+.car-img {
+  width: 100%;
 }

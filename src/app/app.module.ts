@@ -13,6 +13,9 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { VehicleDetailsComponent } from './components/vehicle-details/vehicle-details.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { SaleVehiclesComponent } from './sale-vehicles/sale-vehicles.component';
+import { VehiclesOutComponent } from './vehicles-out/vehicles-out.component';
 
 
 @NgModule({
@@ -27,6 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
     SearchComponent,
     NotfoundComponent,
     VehicleDetailsComponent,
+    VehiclesComponent,
+    SaleVehiclesComponent,
+    VehiclesOutComponent,
   ],
   imports: [
     BrowserModule,
