@@ -9,17 +9,19 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { VehicleDetailsComponent } from './components/vehicle-details/vehicle-details.component';
+import { authGuard } from './gardes/auth.guard';
 
 
 const routes: Routes = [
-  {path:"",redirectTo:"/Home",pathMatch:"full"},
+  {path:"",redirectTo:"/Login",pathMatch:"full"},
   {path:"Home",component:HomeComponent},
   {path:'Login',component:LoginComponent},
   {path:'createUser',component:CreateUserComponent},
   {path:'ForgetPass',component:ForgetPassComponent},
   {path:'addVehicle',component:AddVehicleComponent},
   {path:'search',component:SearchComponent},
-  {path:"VehicleDetails",component:VehicleDetailsComponent},
+  {path:"VehicleDetails/:Id",component:VehicleDetailsComponent},
+  {path:"addVehicle",component:AddVehicleComponent},
   {path:'**',component:NotfoundComponent},
 
   ];

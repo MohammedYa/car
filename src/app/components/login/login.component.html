@@ -29,7 +29,7 @@
                   </div>
                   <div class="input-container">
                     <i class="fa-solid fa-unlock icon"></i>
-                    <input  formControlName="password" type="text" placeholder="كلمة المرور ">
+                    <input  formControlName="password" type="password" placeholder="كلمة المرور ">
                     <div  *ngIf="LoginForm.controls['password'].errors&&LoginForm.controls['password'].touched " class="emailvalidtion">
                       <p *ngIf="LoginForm.controls['password'].errors['required']"> <span>*</span>الرقم السري غير صحيح </p>
                       <p *ngIf="LoginForm.controls['password'].errors['pattern']"><span>*</span>الرقم السري اقل من 6 حروف  </p>
@@ -39,7 +39,7 @@
                   <a routerLink="/ForgetPass">هل نسيت كلمه المرور </a>
 
                   <div class="btn">
-                    <button>تسجيل الدخول </button>
+                    <button [disabled]="LoginForm.invalid ">تسجيل الدخول </button>
 
                   </div>
 
