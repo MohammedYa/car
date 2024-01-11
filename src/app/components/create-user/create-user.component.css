@@ -1,7 +1,7 @@
 
 .section{
   height: 140vh;
-  background-image: url('../../../assets/images/section1.jpg');
+  background-image: url('../../../assets/images/section1.png');
   background-size: cover;
   background-position: center center;
   inset: 0;
@@ -155,4 +155,54 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 20px;
+}
+@media screen and (min-width:992px)and (max-width:1200px) {
+  .form button{
+   
+    width: 200px;
+    
+    }
+}
+@media screen and (min-width:768px)and (max-width:992px) {
+.col-xl-6{
+    height: auto !important;
+}
+.section{
+  height: 139vh;
+}
+}
+@media screen and (min-width:500px)and (max-width:768px) {
+.col-xl-6{
+    height: auto !important;
+}
+.section{
+  height: 172vh;
+}
+.form button{
+   
+  width: 215px;
+  
+  }
+}
+@media screen and (min-width:360px)and (max-width:500px) {
+  .text h2 {
+    font-size: 48px;
+    line-height: 89px;
+    
+}
+.text p {
+  font-size: 16px;
+  
+}
+.col-xl-6{
+  height: auto !important;
+}
+.section{
+height: 255vh;
+}
+.form button{
+ 
+width: 150px;
+
+}
 }
